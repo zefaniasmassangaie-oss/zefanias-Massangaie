@@ -1,0 +1,52 @@
+{
+  "name": "gestao-de-biblioteca",
+  "version": "0.0.1",
+  "private": true,
+  "description": "A Quasar Project",
+  "keywords": [
+    "quasar",
+    "quasar-app",
+    "quasar-app-vite",
+    "quasar-cli",
+    "vite",
+    "vue",
+    "vuejs"
+  ],
+  "type": "module",
+  "scripts": {
+    "lint": "oxfmt && oxlint --fix",
+    "lint:check": "oxfmt --check && oxlint",
+    "dev": "quasar dev",
+    "api": "node server/index.js",
+    "test:auth": "node --test server/auth.test.js",
+    "build": "quasar build",
+    "android:assets": "quasar build -m capacitor -T android --skip-pkg",
+    "android:apk": "quasar build -m capacitor -T android",
+    "android:studio": "quasar build -m capacitor -T android --ide",
+    "db:init": "node scripts/init-db.js",
+    "db:seed": "node scripts/seed-db.js",
+    "db:reset-admin": "node scripts/reset-admin-password.js",
+    "postinstall": "quasar prepare --silent"
+  },
+  "dependencies": {
+    "@capacitor-community/sqlite": "^8.1.1",
+    "@capacitor/android": "^8.5.2",
+    "@capacitor/core": "^8.5.2",
+    "@quasar/extras": "^2.1.0",
+    "quasar": "^2.34.0",
+    "scrypt-js": "^3.0.1",
+    "vue": "^3.5.22",
+    "vue-router": "^5.0.6"
+  },
+  "devDependencies": {
+    "@quasar/app-vite": "^3.10.1",
+    "autoprefixer": "^10.4.27",
+    "oxfmt": "^0.x",
+    "oxlint": "^1.x",
+    "postcss": "^8.5.8"
+  },
+  "engines": {
+    "node": ">= 26 || ^24 || ^22.12"
+  },
+  "productName": "Quasar App"
+}

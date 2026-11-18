@@ -1,0 +1,136 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Install Capacitor SQLite dependencies",
+      "type": "shell",
+      "command": "npm",
+      "args": [
+        "install",
+        "@capacitor/core@^8",
+        "@capacitor-community/sqlite@^8",
+        "scrypt-js"
+      ],
+      "isBackground": false,
+      "problemMatcher": []
+    },
+    {
+      "label": "Install Capacitor SQLite mobile dependencies",
+      "type": "shell",
+      "command": "npm",
+      "args": [
+        "install",
+        "@capacitor/core@^8",
+        "@capacitor-community/sqlite@^8",
+        "scrypt-js"
+      ],
+      "isBackground": false,
+      "problemMatcher": []
+    },
+    {
+      "label": "Install SQLite plugin in Capacitor project",
+      "type": "shell",
+      "command": "npm",
+      "args": ["install", "--prefix", "src-capacitor"],
+      "isBackground": false,
+      "problemMatcher": []
+    },
+    {
+      "label": "Build Capacitor Android assets",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "android:assets"],
+      "isBackground": false,
+      "problemMatcher": []
+    },
+    {
+      "label": "Check project lint",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "lint:check"],
+      "isBackground": false,
+      "problemMatcher": []
+    },
+    {
+      "label": "Run auth and CRUD tests",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "test:auth"],
+      "isBackground": false,
+      "problemMatcher": []
+    },
+    {
+      "label": "Format mobile data service",
+      "type": "shell",
+      "command": "npx",
+      "args": [
+        "oxfmt",
+        ".vscode/tasks.json",
+        "src/pages/BooksPage.vue",
+        "src/pages/ReadersPage.vue",
+        "src/pages/UsersPage.vue",
+        "src/services/api.js",
+        "src/services/auth.js",
+        "src/services/nativeApi.js"
+      ],
+      "isBackground": false,
+      "problemMatcher": []
+    },
+    {
+      "label": "Validate project lint",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "lint:check"],
+      "isBackground": false,
+      "problemMatcher": []
+    },
+    {
+      "label": "Validate web authentication CRUD",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "test:auth"],
+      "isBackground": false,
+      "problemMatcher": []
+    },
+    {
+      "label": "Build Android web assets",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "android:assets"],
+      "isBackground": false,
+      "problemMatcher": []
+    },
+    {
+      "label": "Format generated VS Code task",
+      "type": "shell",
+      "command": "npx",
+      "args": ["oxfmt", ".vscode/tasks.json"],
+      "isBackground": false,
+      "problemMatcher": []
+    },
+    {
+      "label": "Final lint check offline sqlite",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "lint:check"],
+      "isBackground": false,
+      "problemMatcher": []
+    },
+    {
+      "label": "Final web auth tests offline sqlite",
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "test:auth"],
+      "isBackground": false,
+      "problemMatcher": []
+    },
+    {
+      "label": "Format generated VS Code tasks",
+      "type": "shell",
+      "command": "npx",
+      "args": ["oxfmt", ".vscode/tasks.json"],
+      "isBackground": false,
+      "problemMatcher": []
+    }
+  ]
+}

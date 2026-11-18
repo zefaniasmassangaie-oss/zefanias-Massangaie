@@ -1,0 +1,98 @@
+// app global css
+
+:root {
+  --library-canvas: #f3f7f5;
+  --library-surface: #ffffff;
+  --library-ink: #263633;
+  --library-muted: #687874;
+  --library-border: #dce7e2;
+  --library-primary-soft: #e4f1ed;
+  --library-secondary-soft: #f7eae5;
+  --library-success-soft: #e7f3eb;
+  --library-warning-soft: #fbf1dc;
+  --library-negative-soft: #f8e9e7;
+}
+
+body {
+  color: var(--library-ink);
+  background: var(--library-canvas);
+}
+
+.q-page {
+  background: var(--library-canvas);
+}
+
+.q-header,
+.q-drawer,
+.q-card {
+  background-color: var(--library-surface);
+}
+
+.q-card--bordered {
+  border-color: var(--library-border);
+}
+
+.q-table thead tr {
+  color: var(--library-ink);
+  background: #edf3f0;
+}
+
+.library-nav-active {
+  color: var(--q-primary) !important;
+  background: var(--library-primary-soft) !important;
+}
+
+.stock-available,
+.loan-returned,
+.feedback-positive {
+  color: #205f42 !important;
+  background: var(--library-success-soft) !important;
+}
+
+.stock-empty {
+  color: #596662 !important;
+  background: #e9eeeb !important;
+}
+
+.loan-active,
+.feedback-warning {
+  color: #80520e !important;
+  background: var(--library-warning-soft) !important;
+}
+
+.feedback-negative {
+  color: #8f3535 !important;
+  background: var(--library-negative-soft) !important;
+}
+
+.page-content {
+  width: min(100%, 1320px);
+  min-width: 0;
+  margin-inline: auto;
+}
+
+.responsive-table {
+  min-width: 0;
+}
+
+@media (max-width: 599px) {
+  .q-page.q-pa-lg {
+    padding: 16px;
+  }
+
+  .page-content {
+    width: 100%;
+  }
+
+  .mobile-full-width {
+    width: 100%;
+  }
+
+  .mobile-actions {
+    width: 100%;
+  }
+
+  .mobile-actions .q-btn {
+    flex: 1 1 100%;
+  }
+}
